@@ -1,0 +1,210 @@
+body{
+    margin: 0px;
+}
+
+
+.background{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: sandybrown;
+}
+.moving{
+    height: 14px;
+    width: 30px;
+    animation: 8s linear infinite running moving-slidein;
+
+}
+.moving,
+.moving1,
+.moving2,
+.moving3,
+.moving4{
+    overflow: hidden;
+    background-color: burlywood;
+}
+.moving1{
+    height: 14px;
+    width: 30px;
+    margin-top: 100px;
+    animation: 3s linear infinite running moving-slidein;
+}
+.moving2{
+    height: 14px;
+    width: 30px;
+    margin-top: 300px;
+    animation: 4s linear infinite running moving-slidein;  
+}
+.moving3{
+    height: 15px;
+    width: 50px;
+    margin-top: 100px ;
+    animation: 6s linear infinite running moving-slidein;  
+
+}
+.moving4{
+    height: 15px;
+    width: 50px;
+    margin-top: 700px ;
+    animation: 2.5s linear infinite running moving-slidein;
+}
+
+@keyframes moving-slidein{
+    from{
+        transform: translateX(-10px);
+        
+    }
+
+    to{
+        transform: translateX(1000px);
+        
+    }
+    
+}
+.Tix{
+    display: flex;
+    position: relative;
+    background-color: blanchedalmond;
+    height: 500px;
+    width: 500px;
+    justify-self: center;
+    align-self: center;
+    /* animation: 3s infinite growing; */
+}
+/* 
+@keyframes growing{
+    from{
+        width: 500px;
+        height: 500px; 
+    }
+
+    to{
+        height: 550px;
+        width: 550px;
+    }
+} */
+
+
+.cross{
+    margin-left: 170px;
+    width: 10px;
+    height: 100%;
+    background-color: black;
+}
+.cross1{
+    margin-left: 150px;
+    width: 10px;
+    height: 100%;
+    background-color: black;
+}
+.cross2{
+    margin-top: 150px;
+
+    width: 500px;
+    height: 10px;
+    background-color: black; 
+}
+.cross3{
+    width: 500px;
+    height: 10px;
+    background-color: black;
+}
+.container{
+    display: flex;
+    position: fixed;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 500px;
+}
+
+button{
+    position: fixed;
+    border: none;
+    background-color: blanchedalmond;   
+    font-size: 60px;
+}
+#button1{
+    width: 170px;
+    height: 150px;
+    
+}
+button:hover{
+    border: 1px solid greenyellow;
+}
+#button2{
+    width: 150px;
+    height: 150px;
+    margin-left: 180px;
+}
+#button3{
+    width: 159px;
+    height: 150px;
+    margin-left: 340px;
+}
+#button4{
+    margin-top: 160px;
+    width: 170px;
+    height: 165px;
+}
+#button5{
+    margin-top: 160px;
+    width: 150px;
+    height: 165px;
+    margin-left: 180px;
+    
+}
+#button6{
+    width: 159px;
+    height: 165px;
+    margin-top: 160px;
+    margin-left: 340px;
+}
+#button7{
+    width: 170px;
+    height: 165px;
+    margin-top: 335px;
+}
+
+#button8{
+    width: 150px;
+    height: 165px;
+    margin-top: 335px;
+    margin-left: 180px;
+}
+#button9{
+    width: 160px;
+    height: 165px;
+    margin-top: 335px;
+    margin-left: 340px;
+}
+dialog{
+    display: flex;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+}
+#dialog-content{
+    display: flex;
+    justify-content: center;
+    
+}
+#reset{
+    font-size: 12px;
+    height: 50px;
+    width: 80px;
+    margin-top: 130px;
+    border-radius: 20px;
+
+}
+#start{
+    font-size: 12px;
+    height: 50px;
+    width: 80px;
+    margin-top: 130px;
+    margin-left: -150px;
+    border-radius: 20px;
+
+}
