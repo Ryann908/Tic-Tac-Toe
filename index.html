@@ -32,21 +32,24 @@
              <button class="button" id="button8"  data-index="7"></button>
              <button class="button" id="button9"  data-index="8"></button>
         </div>
-        <dialog id="dialog">
+        <dialog id="dialog1" open="visible">
             <div id="dialog-content"></div>
-            <button id="reset">Start</button>
-            <form action="dialog" id="form">
-                <div>
+            <form method="dialog" id="form">
+
+            <div>
                 <div>Player1:</div>
                 <input type="text" id="Player1">
             </div>
              <div>
                 <div>Player2:</div>
                 <input type="text" id="Player2">
+                <button id="Start">Start</button>
+
             </div>
             </form>
         </dialog>
-
+        <dialog id="End" class="hidden">
+        </dialog>
           </div>
     </div>
 </body>
